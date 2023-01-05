@@ -11,5 +11,5 @@ RUN echo "* soft nproc 11000" >> /etc/security/limits.conf && \
 
 COPY main.sh /home/main.sh
 RUN chmod +x /home/main.sh
-EXPOSE 80
+EXPOSE 3000
 CMD /home/main.sh
