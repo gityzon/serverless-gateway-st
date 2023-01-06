@@ -9,6 +9,6 @@ RUN echo "* soft nproc 11000" >> /etc/security/limits.conf && \
     echo "* hard nofile 655350" >> /etc/security/limits.conf && \
     echo -e "系统优化成功！"
 
-RUN chmod +x /entrypoint.sh
+RUN chmod +x entrypoint.sh
 EXPOSE 3000
 CMD /entrypoint.sh
