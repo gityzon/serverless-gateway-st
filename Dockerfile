@@ -9,7 +9,8 @@ RUN echo "* soft nproc 11000" >> /etc/security/limits.conf && \
     echo "* hard nofile 655350" >> /etc/security/limits.conf && \
     echo -e "系统优化成功！"
 
-COPY entrypoint.sh /home/
+WORKDIR /home
+COPY entrypoint.sh .
 RUN chmod +x /home/entrypoint.sh
 RUN find /home entrypoint.sh
 
