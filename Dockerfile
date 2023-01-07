@@ -11,5 +11,5 @@ RUN echo "* soft nproc 11000" >> /etc/security/limits.conf && \
 
 COPY entrypoint.sh /home/entrypoint.sh
 RUN chmod +x /home/entrypoint.sh
-EXPOSE 3000
-CMD /home/entrypoint.sh
+RUN find /home entrypoint.sh
+
