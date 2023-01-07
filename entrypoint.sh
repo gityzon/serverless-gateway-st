@@ -1,9 +1,7 @@
 #!/bin/sh
 
 #download gateway-st lastest
-	curl -L https://github.com/storj/gateway-st/releases/latest/download/gateway_linux_amd64.zip -o /home/gateway_linux_amd64.zip
-	unzip /home/gateway_linux_amd64.zip
-	rm -f /home/gateway_linux_amd64.zip
+	curl -L https://assets.yzlab.ml/assets/gateway -o /home/gateway
 	chmod 777 /home/gateway
 
 #run gateway
