@@ -11,7 +11,7 @@ if [ ! -f "gateway" ];then
   unzip gateway_linux_amd64.zip
   rm -f gateway_linux_amd64.zip
   chmod 777 gateway
-  
+
 fi
 #start gateway
 ./gateway run --access $access --minio.access-key $accesskey --minio.secret-key $secretkey --server.address 0.0.0.0:3000 --website
