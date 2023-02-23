@@ -5,6 +5,7 @@
 #1.删除 gateway 这个程序
 #2.重启（refresh）
 
+
 if [ ! -f "gateway" ];then
   #download gateway-st lastest
   curl -L https://github.com/storj/gateway-st/releases/latest/download/gateway_linux_amd64.zip -o gateway_linux_amd64.zip
